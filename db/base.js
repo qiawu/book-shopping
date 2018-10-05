@@ -57,7 +57,9 @@ module.exports = {
     var cb = argArr.splice(-1)[0];
     
     database.getConnection(function(err, dbConnection) {
-      if (err) { /* do something */ return }
+      if (err) {
+	console.log(`error when get connection ${err}`);
+	} 
       dbConnection.query.apply(dbConnection, argArr.concat(function() {
         dbConnection.release(); // return to the pool
         cb.apply(null, Array.from(arguments));

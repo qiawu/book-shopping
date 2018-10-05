@@ -15,8 +15,8 @@ var recentN = 30;
 
 router.use((req,res,next)=>{
     common = {
-        title : '卖书界面',
-        subtitle : '我要卖书！',
+        title : '后台界面',
+        subtitle : '后台界面',
         activei : 1,
         req : req
     };

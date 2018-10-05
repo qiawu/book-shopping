@@ -10,8 +10,8 @@ var recentNum = 3,
 
 router.use((req,res,next)=>{
   common = {
-    title: '书窝',
-    subtitle: '欢迎来到书窝',
+    title: '和诚针织',
+    subtitle: '欢迎来到和诚针织',
     activei : 0, req:req,
   }
   next();
